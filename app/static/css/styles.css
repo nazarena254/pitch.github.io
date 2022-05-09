@@ -1,0 +1,13 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Aclonica', sans-serif;
+    font-family: 'El Messiri', sans-serif;
+    font-family: 'Lobster Two', cursive;  
+    font-family: 'Righteous', cursive; */
+    scroll-behavior: smooth;
+    background-image: url(../images/bgimg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
