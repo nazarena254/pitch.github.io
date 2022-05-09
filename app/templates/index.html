@@ -1,0 +1,92 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<div class="container text-center">
+
+<h1>PITCH CATEGORIES</h1>
+
+<h2><a class="btn peach-gradient btn-lg text-center" href="{{url_for('main.new_pitch')}}"> Write a new pitch</a></h2>
+    
+</div>
+
+<div class="container">
+
+    <!-- Card -->
+<div class="card card-image"
+  style="background-image: url(https://images.unsplash.com/photo-1489619243109-4e0ea59cfe10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAwfHxuYXR1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60);">
+
+  <!-- Content -->
+  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+    <div>
+      <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Marketing</h5>
+      <h3 class="card-title pt-2"><strong>Marketing Pitches</strong></h3>
+      <p>Encourages people/entereprenuers to  work on stuff that they like and are passionate about, so that they have a master plan of selling themselves, to gain new clients or to 
+        promote their business and products.</p>
+      <a href='/pitches/marketing_pitches' class="btn btn-pink"><i class="fas fa-clone left"></i> View Pitches</a>
+    </div>
+  </div>
+
+</div>
+<!-- Card -->
+
+<br>
+
+<br>
+
+<!-- Card -->
+<div class="card card-image"
+  style="background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fsloanreview.mit.edu%2Farticle%2Fhow-women-can-improve-their-venture-pitch-outcomes%2F&psig=AOvVaw2x7eysuzM6UWWjaMkgRd2S&ust=1600602317786000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIDYpbiS9esCFQAAAAAdAAAAABAD);">
+
+  <!-- Content -->
+  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+    <div>
+      <h5 class="text-warning"><i class="fas fa-comments-dollar"></i></i> Promotion</h5>
+      <h3 class="card-title pt-2"><strong>Promotional Pitch</strong></h3>
+      <p>Getting promoted in a job is not easy. Improve your skills to deliver increasingly better results for your company.
+           Equally important is the promotion talk that takes place with your boss.</p>
+      <a href='/pitches/promotional_pitches' class="btn btn-warning"><i class="fas fa-clone left"></i> View Pitches</a>
+    </div>
+  </div>
+
+</div>
+<!-- Card -->
+
+<br>
+
+<br>
+
+<!-- Card -->
+<div class="card card-image"
+  style="background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hawaii.edu%2Ftuition%2Fscholarships%2F&psig=AOvVaw2OFavo0i5VlAB12r7Kjkoo&ust=1600602369738000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDRv9iS9esCFQAAAAAdAAAAABAD);">
+
+  <!-- Content -->
+  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+    <div>
+      <h5 class="text-secondary"><i class="fas fa-user-graduate"></i> Scholarship</h5>
+      <h3 class="card-title pt-2"><strong>Pitch Your Idea! Win a Scholarship! </strong></h3>
+      <p>
+          Do you really want to pursue your dream course, in an university of your choice,
+          Pitch your achievements and ambitions to try an opportunity to win scholarship. Make it happen</p>
+      <a href='/pitches/scholarship_pitches' class="btn btn-secondary"><i class="fas fa-clone left"></i> View Pitches</a>
+    </div>
+  </div>
+
+</div>
+<!-- Card -->
+
+</div>
+
+<br>
+
+<!-- Footer -->
+<footer class="page-footer font-small secondary-color">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">Copyright (c) 2020 Nazarena Wambura</div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+{% endblock  %}
