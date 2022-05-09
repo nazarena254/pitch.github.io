@@ -24,4 +24,5 @@ def test():
     unittest.TextTestRunner(verbosity=2).run(test)
 
 if __name__ == '__main__':
+    app.config['SECRET_KEY'] = 'naza@123!rena' #add secret key configaration
     manager.run()
