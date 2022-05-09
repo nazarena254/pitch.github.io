@@ -54,9 +54,7 @@ The user can perform the following functions:
 * work on it.
 
 ## License
-Distributed under [MIT license]
-<!-- (https://github.com/nazarena254/pitch.github.io/blob/master/LICENSE). -->
-</br>
+Distributed under [MIT license](https://github.com/nazarena254/pitch.github.io/blob/master/LICENSE).</br>
 Copyright (c) 2022 Nazarena Wambura
 
 ## Support and Contact
