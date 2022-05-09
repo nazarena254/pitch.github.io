@@ -31,19 +31,21 @@ The user can perform the following functions:
 - A user can view the different categories.
 
 
-## Installed packages
+ ## Installed packages
 * Install code editor of your choice.
 * Run `sudo apt-get update`,`sudo apt-get install python3.6` in terminal to install python.
 * Install python extension in code editor(VScode) to run python modules easily.
-* Run `pip install pipenv` in terminal to install pipenv.
-* Run `pipenv shell` create environment.
-* Run `pipenv shell` to activate  and `exit` to deactivate the environment.
-* Run `pipenv install flask` in terminal to install flask. 
-* Run `pipenv install <package>` to install other dependencies like psycopg2...etc
+* Run `python3.9 -m venv --without-pip virtual` in terminal to install virtual environment.
+* Run `source virtual/bin/activate` to activate and `.../deactivate` to deactivate virtual env.
+* Run `curl https://bootstrap.pypa.io/get-pip.py | python` to install pip in virtual env.
+* Run `pip install <packagename>` to install other dependencies.
+* Run `pip install flask` in terminal to install flask. 
 * To deploy on heroku, you will need to install/do the following:
-   - outline dependencies in Pipfile file which is done automatically after creating env. 
+   - outline dependencies `pip freeze`  
+   - add dependencies in requirements.txt file `pip freeze > requirements.txt`
    - heroku cli `npm install -g heroku`
-   - gunicorn  `python3.9 -m pipenv install gunicorn`
+   - gunicorn  `python3.9 -m pip install gunicorn`
+
  
 
 ## Installation / Setup instruction
