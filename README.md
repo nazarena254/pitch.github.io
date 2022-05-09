@@ -1,8 +1,8 @@
 # pitch
 ### It is a python web application that allows users to submit their pitches. 
 
-<!-- ### NewsHub Homepage
-![](./app/static/images/newshubimg.png "newsapp homepage") -->
+### pitch Homepage
+![](./app/static/images/pitch.png "pitch homepage")
 
 ## Description
 pitch web application is built using Python framework (Flask). It allows users to use that one minute wisely. The users will submit their one minute pitches and other users will view them, vote on them and leave comments to give their feedback on them.
