@@ -11,3 +11,42 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.ho1{
+    color: rgb(251, 255, 255);
+    font-family: 'Aclonica', sans-serif;   
+}
+.ho2{
+    color: rgb(251, 255, 255);
+    font-family: 'Aclonica', sans-serif;
+    font-size: 28px;
+}
+.mynavitems{
+    color: rgb(251, 255, 255);
+    font-family: 'Aclonica', sans-serif;
+    font-weight: bold;
+}
+#mylogo{
+    margin-left: 30px;
+    font-size: 23px;
+}
+.myfooter{
+    color: white; 
+    font-family: 'Aclonica', sans-serif ;
+}
+.pitch1{
+    color: white;
+    font-family: 'Lobster Two', cursive; 
+    font-size: 22px;
+}
+
+.pitch2{
+    font-family: 'Lobster Two', cursive;
+    font-size: 32px;
+  
+}
+.navbar1{
+    background-color: rgb(1, 1, 65);
+    border: 3px solid rgb(2, 2, 155);
+   
+}

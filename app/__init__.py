@@ -18,6 +18,7 @@ def create_app(config_name):
 
     # Initializing application
     app = Flask(__name__)
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
     
     #Creating the app configurations
     app.config.from_object(config_options[config_name])

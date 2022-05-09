@@ -2,28 +2,25 @@
 
 {% block content %}
 
-<div class="container text-center">
-
-<h1>PITCH CATEGORIES</h1>
-
-<h2><a class="btn peach-gradient btn-lg text-center" href="{{url_for('main.new_pitch')}}"> Write a new pitch</a></h2>
-    
+<div class="container text-center ho">
+    <h2 class="ho1" >PITCH CATEGORIES</h2>
+    <h2><a class="btn peach-gradient btn-lg text-center" href="{{url_for('main.new_pitch')}}"> <span class="ho2"> Write a new pitch</span> </a></h2> <br>  
 </div>
 
-<div class="container">
-
+<div class="container mt-6" >
     <!-- Card -->
-<div class="card card-image"
-  style="background-image: url(https://images.unsplash.com/photo-1489619243109-4e0ea59cfe10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAwfHxuYXR1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60);">
+<div class="card card-image col-md-9"
+  style=" margin: auto; background-image: url(https://images.unsplash.com/photo-1492446190781-58ac4285911d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHN0YXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60);
+   background-position: center center;background-size: cover;background-repeat: no-repeat;opacity: 0.7;">
 
   <!-- Content -->
   <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
     <div>
-      <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Marketing</h5>
-      <h3 class="card-title pt-2"><strong>Marketing Pitches</strong></h3>
-      <p>Encourages people/entereprenuers to  work on stuff that they like and are passionate about, so that they have a master plan of selling themselves, to gain new clients or to 
-        promote their business and products.</p>
-      <a href='/pitches/marketing_pitches' class="btn btn-pink"><i class="fas fa-clone left"></i> View Pitches</a>
+      <h4 class="card-title pt-2 pitch2"><strong>Marketing Pitches</strong></h4><br>
+      <p class="pitch1" >Encourages people/entereprenuers to  work on stuff that they
+        like and are passionate about, so that they have a master plan of selling
+         themselves, to gain new clients or to promote their business and products.</p>
+      <a href='/pitches/marketing_pitches' class="btn btn-secondary mt-2"><i class="fas fa-clone left"></i> View Pitches</a>
     </div>
   </div>
 
@@ -35,17 +32,17 @@
 <br>
 
 <!-- Card -->
-<div class="card card-image"
-  style="background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fsloanreview.mit.edu%2Farticle%2Fhow-women-can-improve-their-venture-pitch-outcomes%2F&psig=AOvVaw2x7eysuzM6UWWjaMkgRd2S&ust=1600602317786000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIDYpbiS9esCFQAAAAAdAAAAABAD);">
+<div class="card card-image col-md-9"
+style=" margin: auto; background-image: url(https://media.istockphoto.com/photos/clear-night-sky-with-milky-way-and-huge-amount-of-stars-picture-id1287456867?b=1&k=20&m=1287456867&s=170667a&w=0&h=k_ldypib_aEeLD71QVzSS5kBV9QI-INb5k684DVEZ94=);
+background-position: center center;background-size: cover;background-repeat: no-repeat; opacity: 0.75;">
 
   <!-- Content -->
   <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
     <div>
-      <h5 class="text-warning"><i class="fas fa-comments-dollar"></i></i> Promotion</h5>
-      <h3 class="card-title pt-2"><strong>Promotional Pitch</strong></h3>
-      <p>Getting promoted in a job is not easy. Improve your skills to deliver increasingly better results for your company.
+      <h4 class="card-title pt-2 pitch2"><strong>Promotion Pitch</strong></h4><br>
+      <p class="pitch1" >Getting promoted in a job is not easy. Improve your skills to deliver increasingly better results for your company.
            Equally important is the promotion talk that takes place with your boss.</p>
-      <a href='/pitches/promotional_pitches' class="btn btn-warning"><i class="fas fa-clone left"></i> View Pitches</a>
+      <a href='/pitches/promotional_pitches' class="btn btn-secondary mt-2"><i class="fas fa-clone left"></i> View Pitches</a>
     </div>
   </div>
 
@@ -57,18 +54,18 @@
 <br>
 
 <!-- Card -->
-<div class="card card-image"
-  style="background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hawaii.edu%2Ftuition%2Fscholarships%2F&psig=AOvVaw2OFavo0i5VlAB12r7Kjkoo&ust=1600602369738000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDRv9iS9esCFQAAAAAdAAAAABAD);">
+<div class="card card-image col-md-9 mycardimg"
+  style=" margin: auto; background-image: url(https://media.istockphoto.com/photos/star-field-at-night-picture-id501655522?b=1&k=20&m=501655522&s=170667a&w=0&h=yxV0H4RLzwn_roNsSxejPhL0JAQl7YGguAeL1PtniZw=);
+  background-position: center center;background-size: cover;background-repeat: no-repeat; opacity: 0.75;">
 
   <!-- Content -->
   <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
     <div>
-      <h5 class="text-secondary"><i class="fas fa-user-graduate"></i> Scholarship</h5>
-      <h3 class="card-title pt-2"><strong>Pitch Your Idea! Win a Scholarship! </strong></h3>
-      <p>
+      <h4 class="card-title pt-2 pitch2"><strong>Scholarship </strong></h4><br>
+      <p class="pitch1" >  
           Do you really want to pursue your dream course, in an university of your choice,
           Pitch your achievements and ambitions to try an opportunity to win scholarship. Make it happen</p>
-      <a href='/pitches/scholarship_pitches' class="btn btn-secondary"><i class="fas fa-clone left"></i> View Pitches</a>
+      <a href='/pitches/scholarship_pitches' class="btn btn-secondary mt-2"><i class="fas fa-clone left"></i> View Pitches</a>
     </div>
   </div>
 
@@ -80,12 +77,10 @@
 <br>
 
 <!-- Footer -->
-<footer class="page-footer font-small secondary-color">
-
+<footer class="page-footer myfooter" >
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">Copyright (c) 2020 Nazarena Wambura</div>
   <!-- Copyright -->
-
 </footer>
 <!-- Footer -->
 
