@@ -18,8 +18,8 @@ class TestConfig(Config):
     # SQLALCHEMY_DATABASE_URI= os.environ.get('DATABASE_URL')
     pass
 
-class ProdConfig(Config):
-    # SQLALCHEMY_DATABASE_URI= os.environ.get('DATABASE_URL')
+class ProdConfig(Config):  # this configuration is needed during heroku deployment
+    SQLALCHEMY_DATABASE_URI= os.environ.get('DATABASE_URL') 
     pass
 class DevConfig(Config):
     SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://nancyngunjiri1:nazarena123@localhost:5432/pitch'

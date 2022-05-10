@@ -4,7 +4,8 @@ from flask_script._compat import text_type
 from flask_script import Manager,Server
 from flask_migrate import Migrate,MigrateCommand
 
-app = create_app('development')# Creating app instance
+#change from 'development to production' when deploying to heroku
+app = create_app('production')# Creating app instance
 
 manager = Manager(app)
 manager.add_command('server',Server)
@@ -24,5 +25,5 @@ def test():
     unittest.TextTestRunner(verbosity=2).run(test)
 
 if __name__ == '__main__':
-    app.config['SECRET_KEY'] = 'naza@123!rena' #add secret key configaration
+    app.config['SECRET_KEY'] = 'naza123rena' #add secret key configaration
     manager.run()
