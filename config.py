@@ -19,7 +19,7 @@ class TestConfig(Config):
     pass
 
 class ProdConfig(Config):  # this configuration is needed during heroku deployment
-    SQLALCHEMY_DATABASE_URI= os.environ.get('DATABASE_URL') 
+    SQLALCHEMY_DATABASE_URI= 'postgres://hecytzbkhcqioo:e648b842d38703a7a293262c2155b4391c11f02adabdbaeec28c48d8c75f1329@ec2-54-172-175-251.compute-1.amazonaws.com:5432/d7npve7pb3k8op'
     pass
 class DevConfig(Config):
     SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://nancyngunjiri1:nazarena123@localhost:5432/pitch'
