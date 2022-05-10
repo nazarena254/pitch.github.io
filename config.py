@@ -4,8 +4,8 @@ class Config:
     #General configuration parent class
     # SQLALCHEMY_DATABASE_URI= os.environ.get('DATABASE_URL')
     SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://nancyngunjiri1:nazarena123@localhost:5432/pitch'
-   
     SECRET_KEY= os.environ.get('SECRET_KEY')
+
     # email configurations
     MAIL_SERVER = 'smtp.gmail.com'
     MAIL_PORT = 587

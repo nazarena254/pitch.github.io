@@ -21,14 +21,11 @@ Nazarena Wambura.</br>
 ## Requirements
 The user can perform the following functions:
 
-- A user can see the pitches other people have posted.
-- A user can vote on the pitch they liked and give it a downvote or upvote.
+- A user can submit and view the pitches other people have posted or view based on categories
 - A user has to be signed in to leave a comment
 - A user will receive a welcoming email once they sign up.
 - A user can view the pitches I have created in my profile page.
 - A user can comment on the different pitches and leave feedback.
-- A user can submit a pitch in any category.
-- A user can view the different categories.
 
 
  ## Installed packages
@@ -45,6 +42,10 @@ The user can perform the following functions:
    - add dependencies in requirements.txt file `pip freeze > requirements.txt`
    - heroku cli `npm install -g heroku`
    - gunicorn  `python3.9 -m pip install gunicorn`
+* To enable migrations:
+   - Initialize migration `python3.9 manage.py db init`
+   - Create migration `python3.9 manage.py db migrate -m "migration message"`  
+   - Upgrade migration `python3.9 manage.py db upgrade` 
 
  
 
@@ -52,8 +53,7 @@ The user can perform the following functions:
 * Open Terminal {Ctrl+Alt+T}
 * create and cd to the directory where you want to have your project
 * git clone `https://github.com/nazarena254/pitches.github.io.git` to have it locally.
-* code . or atom . based on the text editor you have.
-* work on it.
+* code . or atom . based on the text editor you have and work on it.
 
 ## License
 Distributed under [MIT license](https://github.com/nazarena254/pitch.github.io/blob/master/LICENSE).</br>
