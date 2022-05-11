@@ -37,8 +37,8 @@ background-position: center center;background-size: cover;background-repeat: no-
     <!-- Text -->
     <h4 class="card-text text-dark">{{items.pitch}}</h4>
     <!-- Link -->
-    <a href="{{url_for('main.leave_comment', pitch_id = items.id)}}" class="orange-text d-flex flex-row-reverse p-2">
-      <h4 class="waves-effect waves-light">Comments<i class="far fa-comments ml-2"></i></h4>
+    <a href="{{url_for('main.leave_comment', pitch_id = items.id)}}" class=" d-flex flex-row-reverse p-2">
+      <h4 class="waves-effect waves-light" style="margin-right: 20px;">Comments<i class="far fa-comments ml-2"></i></h4>
     </a>
     <p>Upvote</p>
     <p>Downvote</p>
