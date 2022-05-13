@@ -13,11 +13,10 @@
     <div class="col-md-7 text-md-left ml-3 mt-3">
 
       <!-- Except -->
-      <a href="#!" class="green-text">
-        <h3 class="h6 pb-1"><i class="fas fa-user-cog"></i> {{user.username| capitalize}} </h3>
-      </a>
+     
+        <h3 style="color: rgb(0, 132, 255); text-decoration: underline; font-family: 'Righteous', cursive;"> Welcome {{user.username| capitalize}} </h3>
 
-      <h4 class="h4 mb-4" style='text-decoration:underline;'>My Bio...</h4>
+      <h4 class="h4 mb-4">My Pitchpose Bio...</h4>
 
        {% if user.bio %}
 
@@ -27,17 +26,11 @@
 
        {% endif %}
 
-      <p class="font-weight-normal"><a><strong>Last Edit :</strong></a> 19/08/2016</p>
 
-      <a href="{{url_for('main.update_bio',uname=user.username)}}" class="btn btn-success">Edit Bio</a>
-      <a href="{{url_for('main.update_profile',uname=user.username)}}" class="btn btn-success">New Pitch</a>
+      <a href="{{url_for('main.update_bio',uname=user.username)}}" class="btn btn-primary">Edit Bio</a>
+      <a href="{{url_for('main.update_profile',uname=user.username)}}" class="btn btn-primary">New Pitch</a>
      
-      {% if user == current_user %}
-        <form  action="{{url_for('main.update_pic',uname=user.username)}}" method="post" enctype = "multipart/form-data">
-      <input type="file"  name="photo" class="form-group" required><br>
-      <input class='form-group' type='submit'>
-      </form>
-      {% endif %}
+     
     </div>
     <!-- Grid column -->
 
@@ -47,7 +40,7 @@
 </div>
 <!-- News jumbotron -->
 
-<h2 class='amber-text' style='text-decoration:underline;'>My Pitches</h2>
+<h3 class='mb-2' style="margin-left: 15px; font-family: 'Righteous', cursive;">My Pitches</h3>
  {% if current_user %}
 {% for items in pitch[::-1] %}
 
@@ -56,16 +49,18 @@
   <div class='col-sm-9 col-md-9 col-lg-9'>
   
 <!-- Card -->
-<div class="card card-cascade wider">
+<div class="card card-cascade wider text-white"  
+style=" font-family: 'Lobster Two', cursive; margin: auto; background-image: url(https://media.istockphoto.com/photos/star-field-at-night-picture-id501655522?b=1&k=20&m=501655522&s=170667a&w=0&h=yxV0H4RLzwn_roNsSxejPhL0JAQl7YGguAeL1PtniZw=);
+  background-position: center center;background-size: cover;background-repeat: no-repeat; opacity: 0.75; border: 1.8px solid rgb(31, 98, 243); "> >
 
   <!-- Card image -->
   <div class="view view-cascade gradient-card-header peach-gradient">
 
     <!-- Title -->
-    <h2 class="card-header-title text-center mb-3">{{items.author.username| capitalize}}</h2>
+    <h3 class="card-header-title text-center mb-3">{{items.author.username| capitalize}}</h3>
     <!-- Text -->
     <p class="text-center mb-0"><i class="fas fa-calendar mr-2"></i>{{items.posted.strftime('%Y-%m-%d')}}</p>
-    <p class="text-center mb-0"><i class="fas fa-list mr-2"></i>{{items.category}}</p>
+    <p class="text-center mb-0 fs-5"><i class="fs-5 mr-2"></i>{{items.category}}</p>
 
   </div>
 
@@ -73,12 +68,15 @@
   <div class="card-body card-body-cascade text-center">
 
     <!-- Text -->
-    <h4 class="card-text text-dark">{{items.pitch}}</h4>
+    <h4 class="card-text text-white">{{items.pitch}}</h4>
     <!-- Link -->
-    <a href="{{url_for('main.leave_comment', pitch_id = items.id)}}" class="orange-text d-flex flex-row-reverse p-2">
-      <h5 class="waves-effect waves-light">Comments<i class="far fa-comments ml-2"></i></h5>
+    <a href="{{url_for('main.leave_comment', pitch_id = items.id)}}" class="align-items-center">
+      <h5>Comments</h5>
     </a>
-
+    <div class="row display-flex">
+      <a class="fs-5 col-md-7"  href="" >Upvotes 0</a>
+      <a class="fs-5 col-md-3" href="" >Downvotes 0 </a>
+    </div>
   </div>
   <!-- Card content -->
 

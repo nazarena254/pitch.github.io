@@ -27,7 +27,7 @@ background-position: center center;background-size: cover;background-repeat: no-
     <h2 class="card-header-title text-center mb-3">{{items.author.username| capitalize}}</h2>
     <!-- Text -->
     <p class="text-center mb-0"><i class="fas fa-calendar mr-2"></i>{{items.posted.strftime('%Y-%m-%d')}}</p>
-    <p class="text-center mb-0"><i class="fas fa-list mr-2"></i>{{items.category}}</p>
+    <p class="text-center mb-0 fs-5"><i class="mr-2"></i>{{items.category}}</p>
 
   </div>
 
@@ -35,13 +35,17 @@ background-position: center center;background-size: cover;background-repeat: no-
   <div class="card-body card-body-cascade text-center">
 
     <!-- Text -->
-    <h4 class="card-text text-dark">{{items.pitch}}</h4>
+    <h4 class="card-text text-white">{{items.pitch}}</h4>
     <!-- Link -->
-    <a href="{{url_for('main.leave_comment', pitch_id = items.id)}}" class=" d-flex flex-row-reverse p-2">
-      <h4 class="waves-effect waves-light" style="margin-right: 20px;">Comments<i class="far fa-comments ml-2"></i></h4>
+    <a href="{{url_for('main.leave_comment', pitch_id = items.id)}}" class=" align-items-center ">
+      <h5 >Comments</h5>
     </a>
-    <p>Upvote</p>
-    <p>Downvote</p>
+    <div class="row display-flex">
+      <a class="fs-5 col-md-7"  href="" >Upvotes 0</a>
+      <a class="fs-5 col-md-3" href="" >Downvotes 0 </a>
+    </div>
+    
+    
   </div>
   <!-- Card content -->
 

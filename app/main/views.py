@@ -74,7 +74,7 @@ def leave_comment(pitch_id):
         
     return render_template('new_comment.html',comment_form=comment_form, comment=comment,pitch_id=pitch_id)
 
-@main.route('/user/<uname>')
+@main.route('/profile/profile/<string:uname>', methods = ['GET','POST'])
 def profile(uname):
     user = User.query.filter_by(username = uname).first()
     user_id = current_user.id
@@ -93,7 +93,7 @@ def update_profile(uname):
     if user is None:
         abort(404)
 
-    form = PitchForm()
+    form = PitchForm() 
 
     if form.validate_on_submit():
         pitch = form.my_pitches.data
@@ -141,3 +141,13 @@ def increment(like,pitch_id):
     new_like.save_pitch()
     
     return render_template('pitches.html',likes=likes)
+
+@main.route('/downvote/<int:like>/<int:pitch_id>')
+def decrement(like,pitch_id):
+    all_dislikes = Pitch.query.filter_by(like,pitch_id).all()
+    likes = int(all_dislikes) + 1
+    user_id = user_id
+    new_dislike = Pitch(user_id=user_id,pitch_id=pitch_id,likes=like)
+    new_dislike.save_pitch()
+    
+    return render_template('pitches.html',likes=likes)    
