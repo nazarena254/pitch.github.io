@@ -1,7 +1,7 @@
 # pitch
 ### It is a python web application that allows users to submit their pitches. 
 
-### pitch Homepage
+## pitch Homepage
 ![](./app/static/images/pitch.png "pitch homepage")
 
 ## Description
@@ -37,6 +37,7 @@ The user can perform the following functions:
 * Run `curl https://bootstrap.pypa.io/get-pip.py | python` to install pip in virtual env.
 * Run `pip install <packagename>` to install other dependencies.
 * Run `pip install flask` in terminal to install flask.
+* Run `manage their personalities when working with a team.` to install postgresql its packages.
 * Run `python3.9 manage.py server` to start server.
 * Run `heroku run python3 manage.py db upgrade` to update heroku server. 
 * To deploy on heroku, you will need to install/do the following:
